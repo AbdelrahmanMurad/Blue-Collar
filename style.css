@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --primary: rgb(254 180 71);
+  --rawUmber: #754d14;
+  --blue: #1d2453;
+  --gray: #a3a3a3;
+}
+
+header,
+nav {
+  margin: 20px 20%;
+}
+
+/* =============== header =============== */
+
+header {
+  height: 40px;
+  margin-bottom: -30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo .icon {
+  margin-right: 10px;
+}
+
+.logo h1 {
+  color: var(--blue);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.logo img {
+  width: 40px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  color: var(--blue);
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-link {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.social-link .info {
+  margin-left: 10px;
+}
+
+.social-link .info h3 {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.social-link .info p {
+  color: var(--gray);
+}
+
+/* =============== nav =============== */
+
+nav {
+  background-color: var(--primary);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(45px);
+  -webkit-transform: translateY(45px);
+  -moz-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  -o-transform: translateY(45px);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 22px;
+  color: var(--blue);
+  font-weight: 600;
+  padding: 5px;
+}
+
+nav ul li:hover {
+  background-color: #1d245341;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--blue);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+/* =============== background-img =============== */
+
+.background-img {
+  padding: 0px 20%;
+  height: 80vh;
+  background-size: cover;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("imgs/background-img.jpeg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+.background-img .info p {
+  color: white;
+  padding: 10px;
+  background-color: rgba(107, 107, 107, 0.411);
+  font-size: 14px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.background-img .info h1 {
+  color: white;
+  margin-bottom: 14px;
+  font-size: 40px;
+  max-width: 400px;
+  font-weight: bold;
+}
+
+.background-img .btn {
+  background-color: var(--primary);
+  color: var(--blue);
+  padding: 16px 30px;
+}
+
+/* =============== welcome =============== */
+
+.welcome {
+  margin: 100px 20%;
+  display: flex;
+}
+
+.welcome img {
+  width: 350px;
+  height: auto;
+}
+
+.welcome .info {
+  margin-left: 40px;
+  padding: 20px 0px;
+}
+
+.welcome .info h1 {
+  color: var(--blue);
+  margin-bottom: 14px;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.welcome .info p {
+  color: var(--gray);
+  margin-bottom: 14px;
+}
+
+.welcome .info .tag {
+  color: var(--blue);
+  padding: 5px 25px;
+  background-color: rgb(244 244 244);
+  width: fit-content;
+  font-weight: 500;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+}
+
+.experience .years {
+  width: 120px;
+  padding: 10px;
+  background-color: rgb(244 244 244);
+  text-align: center;
+}
+
+.experience .years h1 {
+  color: var(--primary);
+  font-size: 50px;
+}
+
+.experience .years h3 {
+  color: var(--blue);
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.experience ul {
+  margin-left: 30px;
+  color: var(--gray);
+}
+
+.experience ul li {
+  margin-bottom: 5px;
+}
+
+/* =============== service =============== */
+
+.service {
+  background-color: #f3f3f3;
+  padding: 16px;
+}
+
+.service .address-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.service .address {
+  text-align: center;
+  max-width: 50vw;
+}
+
+.service .address h2 {
+  color: var(--blue);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2;
+  /* min-height: 100vh; */
+  justify-content: center;
+  align-content: center;
+  margin: 0px 200px 100px;
+}
+
+.icon-service {
+  width: 50px;
+  height: 50px;
+  color: var(--primary);
+}
+
+.services .item {
+  background-color: #121d4b;
+  color: #ffbb41;
+  padding: 24px;
+  margin: 15px;
+  width: 300px;
+  height: 300px;
+}
+
+.services .item .material-symbols-outlined {
+  font-size: 34px;
+  margin-bottom: 4px;
+}
+
+.services .item h3 {
+  font-size: 20px;
+}
+
+.services b {
+  color: white;
+  cursor: pointer;
+}
+
+.lorem {
+  color: #a0a0a0;
+}
+
+/* =============== gallary =============== */
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px 20px;
+}
+
+.gallery .item {
+  flex-basis: calc(25% - 20px);
+  margin: 10px;
+  text-align: center;
+  /* box-sizing: border-box; */
+}
+
+.gallery .item img {
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #121d4b;
+}
+
+small {
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.gallery-section .our-service {
+  margin: 100px auto;
+  background-color: rgb(243, 243, 243);
+}
+
+/* =============== footer =============== */
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #121d4b;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* =============== common classes =============== */
+
+.sign {
+  color: var(--primary);
+  margin-left: -19px;
+}
+
+.our-service {
+  color: var(--blue);
+  margin-left: 45%;
+  padding: 5px 20px;
+  background-color: white;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.tip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
